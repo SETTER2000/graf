@@ -10,7 +10,7 @@ angular.module('myApp.view1', ['ngRoute'])
     }])
 
     .controller('View1Ctrl', ['$scope', function ($scope) {
-        $scope.width = 600;
+        $scope.width = 800;
         $scope.height = 400;
         $scope.yAxis = "Sales";
         $scope.xAxis = "2014";
@@ -56,7 +56,197 @@ angular.module('myApp.view1', ['ngRoute'])
             {
                 label: 'December',
                 value: 3900
-            }
+            },{
+                label: 'Январь',
+                value: 50
+            },
+            {
+                label: 'Февраль',
+                value: 150
+            }, {
+                label: 'Март',
+                value: 220
+            }, {
+                label: 'Апрель',
+                value: 400
+            }, {
+                label: 'Май',
+                value: 600
+            }, {
+                label: 'Июнь',
+                value: 650
+            }, {
+                label: 'Июль',
+                value: 759
+            }, {
+                label: 'Август',
+                value: 900
+            }, {
+                label: 'Сентябрь',
+                value: 1000
+            }, {
+                label: 'Октябрь',
+                value: 1300
+            }, {
+                label: 'Ноябрь',
+                value: 2700
+            },
+            {
+                label: 'December',
+                value: 3900
+            },{
+                label: 'Январь',
+                value: 50
+            },
+            {
+                label: 'Февраль',
+                value: 150
+            }, {
+                label: 'Март',
+                value: 220
+            }, {
+                label: 'Апрель',
+                value: 400
+            }, {
+                label: 'Май',
+                value: 600
+            }, {
+                label: 'Июнь',
+                value: 650
+            }, {
+                label: 'Июль',
+                value: 759
+            }, {
+                label: 'Август',
+                value: 900
+            }, {
+                label: 'Сентябрь',
+                value: 1000
+            }, {
+                label: 'Октябрь',
+                value: 1300
+            }, {
+                label: 'Ноябрь',
+                value: 2700
+            },
+            {
+                label: 'December',
+                value: 3900
+            },{
+                label: 'Январь',
+                value: 50
+            },
+            {
+                label: 'Февраль',
+                value: 150
+            }, {
+                label: 'Март',
+                value: 220
+            }, {
+                label: 'Апрель',
+                value: 400
+            }, {
+                label: 'Май',
+                value: 600
+            }, {
+                label: 'Июнь',
+                value: 650
+            }, {
+                label: 'Июль',
+                value: 759
+            }, {
+                label: 'Август',
+                value: 900
+            }, {
+                label: 'Сентябрь',
+                value: 1000
+            }, {
+                label: 'Октябрь',
+                value: 1300
+            }, {
+                label: 'Ноябрь',
+                value: 2700
+            },
+            {
+                label: 'December',
+                value: 3900
+            },{
+                label: 'Январь',
+                value: 50
+            },
+            {
+                label: 'Февраль',
+                value: 150
+            }, {
+                label: 'Март',
+                value: 220
+            }, {
+                label: 'Апрель',
+                value: 400
+            }, {
+                label: 'Май',
+                value: 600
+            }, {
+                label: 'Июнь',
+                value: 650
+            }, {
+                label: 'Июль',
+                value: 759
+            }, {
+                label: 'Август',
+                value: 900
+            }, {
+                label: 'Сентябрь',
+                value: 1000
+            }, {
+                label: 'Октябрь',
+                value: 1300
+            }, {
+                label: 'Ноябрь',
+                value: 2700
+            },
+            {
+                label: 'December',
+                value: 3900
+            },{
+                label: 'Январь',
+                value: 50
+            },
+            {
+                label: 'Февраль',
+                value: 150
+            }, {
+                label: 'Март',
+                value: 220
+            }, {
+                label: 'Апрель',
+                value: 400
+            }, {
+                label: 'Май',
+                value: 600
+            }, {
+                label: 'Июнь',
+                value: 650
+            }, {
+                label: 'Июль',
+                value: 759
+            }, {
+                label: 'Август',
+                value: 900
+            }, {
+                label: 'Сентябрь',
+                value: 1000
+            }, {
+                label: 'Октябрь',
+                value: 1300
+            }, {
+                label: 'Ноябрь',
+                value: 2700
+            },
+            {
+                label: 'December',
+                value: 3900
+            },
         ];
 
         $scope.max = 0;
