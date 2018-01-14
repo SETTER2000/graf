@@ -1,0 +1,77 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+
+.chart {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 60px auto;
+  position: relative;
+}
+
+.y {
+  position: absolute;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  bottom: 0;
+  padding: 5px;
+}
+
+.x {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 5px;
+}
+
+.bar {
+  background: blue;
+  position: absolute;
+  bottom: 0;
+}
+
+.dot {
+  background: blue;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+svg {
+  position: absolute;
+  transform: rotateX(180deg);
+  left: 0;
+}
+
+line  {
+  stroke:red;
+  stroke-width:1px;
+}
+
+
+/***   Вторая вьюха ***/
+

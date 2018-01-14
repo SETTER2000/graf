@@ -1,0 +1,45 @@
+<div class="chart" style="width:{{width}}px; height:{{height}}px;">
+
+    <!-- Метки -->
+    <div class="y" style="width:{{height}}px;">{{yAxis}}</div>
+    <div class="x">{{xAxis}}</div>
+
+    <!-- Данные -->
+    <div ng-repeat="bar in data" class="bar" style="height:{{bar.value / max * height}}px; width:{{width / data.length - 5}}px; left:{{$index / data.length * width}}px;"></div>
+
+</div>
+
+<div class="chart" style="width:{{width}}px; height:{{height}}px;">
+
+    <!-- Метки -->
+    <div class="y" style="width:{{height}}px;">{{yAxis}}</div>
+    <div class="x">{{xAxis}}</div>
+
+    <!-- Данные -->
+    <div ng-repeat="dot in data" class="dot" style="bottom:{{dot.value / max * height}}px; left:{{($index + 0.5) / data.length * width}}px;"></div>
+
+</div>
+
+<div class="chart" style="width:{{width}}px; height:{{height}}px;">
+
+    <!-- Метки -->
+    <div class="y" style="width:{{height}}px;">{{yAxis}}</div>
+    <div class="x">{{xAxis}}</div>
+
+    <!-- Данные -->
+    <svg style="width:{{width}}px; height:{{height}}px;">
+
+        <line ng-repeat="line in data"
+              x1="{{$index / data.length * width }}"
+              y1="{{data[$index - 1].value / max * height}}"
+              x2="{{($index + 1) / data.length * width}}"
+              y2="{{line.value / max * height}}">
+        </line>
+
+    </svg>
+
+</div>
+
+<div ng-repeat="slide in data">
+  <input type="range" min="{{min}}" max="{{max}}" ng-model="slide.value" class="slider" id="myRange">  {{slide.label}}
+</div>
